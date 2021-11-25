@@ -2,9 +2,13 @@
 	"name": "script-assets-web",
 	"displayName": "Script Assets",
 	"description": "",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"publisher": "Saige",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Bon-saiGecko/script-assets-extension"
+	},
 	"engines": {
 		"vscode": "^1.62.0"
 	},
