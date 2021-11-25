@@ -5,6 +5,7 @@
 	"version": "0.1.0",
 	"publisher": "Saige",
 	"license": "MIT",
+	"icon": "scriptassets.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Bon-saiGecko/script-assets-extension"
