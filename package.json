@@ -17,8 +17,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onLanguage:luau",
-		"onLanguage:lua"
+		"*"
 	],
 	"browser": "./dist/web/extension.js",
 	"contributes": {},
