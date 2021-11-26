@@ -34,6 +34,13 @@ export function activate(context: vscode.ExtensionContext) {
 			const id = /rbxassetid:\/\/(\d+)/.exec(word)?.[1];
 			
 			console.log(`Found ${id}, fetching thumbnail info...`);
+			/*
+				I would like to request thumbnails.roblox.com directly here.
+				Unfortunately, it's not possible to do so.
+				Roblox's API doesn't return CORS header so the request is blocked.
+				This glitch app is just a little Node.js app that fetches the thumbnail info from Roblox's API and returns it with CORS headers.
+				The only thing sent to this app is the ID of the asset and the app doesn't log anything. It's even open source at https://glitch.com/~grandiose-lumbar-aster
+			*/
 			const response = await fetch(`https://grandiose-lumbar-aster.glitch.me/${id}`);
 			const data = await response.json() as RobloxThumbnailResponse;
 			const image = data.data?.[0]?.imageUrl;
