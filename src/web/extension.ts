@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const image = data.data?.[0]?.imageUrl;
 			console.log(image);
 
-			const mdString = new vscode.MarkdownString(`<img src="${image}" height="150px">`);
+			const mdString = new vscode.MarkdownString(`<img src="${image}" height="150px" width="150px">`);
 			mdString.supportHtml = true;
 			return new vscode.Hover(mdString);
 		}
